@@ -1,0 +1,173 @@
+{
+    "comun":{
+        "cerrar"    :   "Fermer",
+        "leermas"   :   "Lire plus",
+        "funciones" :   "Fonctions",
+        "tecnologias" :   "Tech. :"
+    },    
+    "inicio" : {
+        "titulo"        :   "Développeur de software"
+    },
+    "barraprincipal" :{
+		"Inicio"		:	"Accueil",
+		"Perfil"		:	"Profil",
+        "Formacion"     :   "Formation",
+		"Experiencia"	:	"Expérience",
+		"Habilidades"	:	"Compétences",
+		"Contacto"		:	"Contact"
+    },
+    "perfil" :{
+        "acercade"        :   {
+            "titulo"          :   "À propos de moi",
+            "detalle"   :   "Je suis ingénieur de l'informatique et développeur de software. J'ai plus de quatre ans d'expérience en programmation et management de basses de donnés en différentes technologies comme Angular.js, JAVA, Delphi 2007 et PL/SQL. Je considère que je peux m'adapter facilement aux changes de la technologie. Je suis récursive et autodidacte.",
+            "caracter" : {
+                "item1" :   "Je suis discipliné, autonome et j'apprends avec facilité.",
+                "item2" :   "Je m'adapte facilement aux changements technologiques.",
+                "item3" :   "J'ai bonne capacité à travailler en équipe.",
+                "item4" :   "Je suis polyvalent et j'aime apprendre des langues étrangères."
+            },
+            "idiomas":{
+                "titulo":"Langages",
+                "leng1" : {
+                    "nombre" : "Espagnol",
+                    "nivel"  : "Maternelle"
+                },
+                "leng2" : {
+                    "nombre" : "Français",
+                    "nivel"  : "Intermédiaire"
+                },
+                "leng3" : {
+                    "nombre" : "Anglais",
+                    "nivel"  : "Intermédiaire-avancé"
+                }
+            }
+        }
+    },
+    "habilidades":{
+        "programacion"  : "Programmation",
+        "basesdatos"    : "Bases de données",
+        "herramientas"  : "Outils",
+        "frameworks"    : "Frameworks",
+        "servidores"    : "Serveurs d'application",
+        "programas"     : "Logiciels"
+    },    
+    "formacion"   :{
+        "principal":{
+            "titulo"    :   "Cursus Scolaire",
+            "forma1":{
+                "anho"  :   "2007",
+                "lugar" :   "Université Catholique du Colombie",
+                "titulo":   "Ingénieur de systèmes",
+                "tiempo":   "janvier 2001 – juin 2007"
+            },
+            "forma2":{
+                "anho"  :   "1999",
+                "lugar" :   "ESACOOP (Bogota, Colombie) ",
+                "titulo":   "Technicien d’informatique",
+                "tiempo":   "janvier 1999 – janvier 2000"
+            }
+        },
+        "certificaciones":{
+            "titulo"    :   "Certifications",
+            "forma1":{
+                "anho"  :   "2017",
+                "titulo":   "Oracle Java Programmer I (1Z0-803)",
+                "lugar":  "Oracle"
+            }
+        },
+        "complementaria":{
+            "titulo"    :   "Formations",
+            "forma1":{
+                "anho"  :   "2015",
+                "lugar" :   "AULA MATRIZ (Bogota, Colombie)",
+                "titulo":   "Web Component Development with Servlets and JSPs Java EE 6",
+                "tiempo":   "juin 2015 – août 2015"
+            },
+            "forma2":{
+                "anho"  :   "2015",
+                "lugar" :   "Université corporation École d’arts et lettres (Bogota, Colombie)",
+                "titulo":   "Désigne Graphique (inachevé)",
+                "tiempo":   "janvier 2013 – novembre 2015"
+            },
+            "forma3":{
+                "anho"  :   "2009",
+                "lugar" :   "AULA MATRIZ (Bogota, Colombie)",
+                "titulo":   "Bases de données Oracle 10g - Atelier d'administración",
+                "tiempo":   "juin 2009 – août 2009"
+            }             
+        }
+    },
+    "experiencia":{
+        "expe1":{
+            "sitio" :   "http://www.heinsohn.com.co/",
+            "lugar" :   "Heinsohn (Bogota,Colombie)",
+            "cargo" :   "Ingénieur développeur Jr.",
+            "tiempo":   "2016 juin - 2016 août",
+            "tecnologias"   : "Angular.js, JQuery, HTML5, CSS3, JavaScript, GIT",
+            "funciones": {
+                "fungral"   :  "Développement web, en travaillant dans une équipe SCRUM.",
+                "func1"     :  "Développement en JavaScript basé sur les frameworks Angujar.js et JQuery des histoires d’utilisateur du projet.",
+                "func2"     :  "Réalisation d’une partie de l’interface du site ASOPAGOS avec HTML, CSS3 et JavaScript.",
+                "func3"     :  "Consommation de services web REST en Java.",
+                "func4"     :  "Maintenance et support technique aux utilisateurs."
+            }
+        },
+        "expe2":{
+            "sitio" :   "http://www.heinsohn.com.co/",
+            "lugar" :   "Heinsohn (Bogota,Colombie)",
+            "cargo" :   "Ingénieur développeur Jr.",
+            "tiempo":   "2015 Décembre - 2016 juin",
+            "tecnologias"   : "Delphi 2007, Oracle 10g, MS SourceSafe, TortoiseSVN",
+            "funciones": {
+                "fungral"   :  "Développement en utilisant différentes technologies pour le système de gestion financière MIDAS.",
+                "func1"     :  "Conception et développement des solutions client/serveur en Delphi 2007 d’accord aux besoins des clients.",
+                "func2"     :  "Conception et développement des procédures PL/SQL en Oracle 10G",
+                "func3"     :  "Réalisation de la documentation technique.",
+                "func4"     :  "Maintenance sur système et support technique aux utilisateurs."
+            }
+        },
+        "expe3":{
+            "sitio" :   "http://www.aseinfo.com.sv",
+            "lugar" :   "Aseinfo (Bogota,Colombie)",
+            "cargo" :   "Ingénieur d’implémentation",
+            "tiempo":   "mai 2015 – juillet 2015",
+            "tecnologias"   : "Transact SQL / SQL Server 2005, IIS, Windows Server 2008",
+            "funciones": {
+                "fungral"   :  "Développement, documentation et implémentation de l’application EVOLUTION.",
+                "func1"     :  "Réaliser la documentation technique.",
+                "func2"     :  "Installer  et intégrer des components dans les systèmes des clients.",
+                "func3"     :  "Concevoir et Développer de procédures en transact-SQL en SQL Server 2005 adaptés aux besoins des clients.",
+                "func4"     :  "Maintenance et support technique aux utilisateurs."
+            }
+        },
+        "expe4":{
+            "sitio" :   "http://www.mti.com.co/",
+            "lugar" :   "MTI – Thomas Greg and Sons (Bogota,Colombie)",
+            "cargo" :   "Annaliste de développement ",
+            "tiempo":   "avril 2014 - septembre 2014",
+            "tecnologias"   : "Delphi 2007, Postgress, DB2, MS Excel",
+            "funciones": {
+                "fungral"   :  "Développer avec Delphi 2007 en environnement client/serveur du module d’audit et qualité d’OPENFILE, application pour gestion documentaire.",
+                "func1"     :  "Réaliser les consultations en basse de données Postgress et DB2.",
+                "func2"     :  "Programmer avec Delphi 2007 et utiliser MS Excel avancé pour former des reports.",
+                "func3"     :  "Réaliser la documentation technique. ",
+                "func4"     :  "Maintenance et support technique aux utilisateurs."
+            }
+        },
+        "expe5":{
+            "sitio" :   "#",
+            "lugar" :   "REALIZAR CONSULTORES (Bogota,Colombie)",
+            "cargo" :   "Ingénieur consultant",
+            "tiempo":   "août  2008 - août  2010",
+            "tecnologias"   : "Delphi 2007, JBuilder, Java, Oracle 10g, SQL Server 2005 MS Excel",
+            "funciones": {
+                "fungral"   :  "Conception et Développement d’une partie de logiciel de système de comptes trimestriels en DANE et le système de ressources humains en COOPAVA en base des données et applications du bureau.",
+                "func1"     :  "Développer et tester en Delphi 2007 en environnement  client-serveur de partie de l’application de comptes trimestriels, annuels et départementaux.",
+                "func2"     :  "Concevoir, développer et tester en Java basée en l’IDE JBuilder de module pour l’attribution de tickets de COOPAVA.",
+                "func3"     :  "Développer des procédures en PL/SQL (Oracle 10g) et SQL Server 2005",
+                "func4"     :  "Modéliser en UML et documenter pour implanter les solutions techniques.",
+                "func5"     :  "Maintenance et support technique aux utilisateurs."
+            }
+        }
+    }    
+}

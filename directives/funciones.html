@@ -1,0 +1,24 @@
+<!-- Muestra la lista de funciones del cargo -->
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h3>{{ 'comun.funciones' | translate}}</h3>
+  </div>
+  <div class="modal-body">
+  	<h4>
+  		{{ 'experiencia.expe' + numexp + '.funciones.fungral' | translate}}
+  	</h4>
+  	<ul>
+        <li ng-repeat="y in numfun">
+			{{ 'experiencia.expe' + numexp + '.funciones.func' + y | translate}}
+        </li>
+  	</ul>
+  	<p>
+  		<strong>{{ 'comun.tecnologias' | translate}}</strong>
+  		{{ 'experiencia.expe' + numexp + '.tecnologias' | translate}}
+	 </p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal">{{ 'comun.cerrar' | translate}}</button>
+  </div>
+</div>

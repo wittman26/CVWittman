@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700');
+
+/*FUENTES*/
+$inicioFont : 'Open Sans', sans-serif;
+
+/* COLORES */
+$colorBase : #5d10a0;/*#5d10a0;/*#5d10a0; /*Naranja*/
+
+/* Color iconos*/
+$colorConSpa : white;/*#0d8bbd;*/
+$colorConSpaFo : #222;
+
+/* Color titulos*/
+$colorh2 : #0088ec;/*#5d10a0;/*#d61111;*/
+$colorh3 : #ff5722;/*#1021a0;*/
+
+/*Perifl item*/
+$colorPerIte : #969494;
+
+/*Barra Social*/
+$colorBarSocBckg: rgba(238, 238, 238, 1);
+$colorBarSocA:	#444242;
+$colorBarSocAHov: black;
+$colocBotNav:	black; /* Flechas navega */
+
+/*Footer - Contacto*/
+$colorFooterBkg: #222;
+$colorFooterh4: white;
+$colorFooterh2: white;
+
+/* Inicio*/
+$colorInicio : #00b3ec;
+$colorInicioh3 : white;
+$colorIniH1Bor : white;
+
+/*Borde imagen*/
+$colorImaBor: #0088ec;/*#db4040;*/
+
+/*Habilidades*/
+$colorLisHab:	#FF5722;/*#ed1821; /*#e88f37;*/
+$colorLisHabBd:	#00b3ec; /*#e88f37;*/
+$colorLisHabh:	#FF5722;/*#ed1821; /*#589dc3;*/
+$colorLisHabf:	#00b3ec; /*#589dc3;*/
+$colorLisHabs:	#FF5722;/*#ed1821; /*#589dc3;*/
+$colorLisHabp:	#00b3ec; /*#589dc3;*/
+
+/*Formaciones*/
+$colorLisForTiFo : #08c;
+$colorLisForTiFu : white;
+$colorLisForFl:	#c10808;
+$colorLisForConFo : white;
+$colorLisForConFu : #555;
+$colorLisForConBor: #afa9a6;
+
+/*Experiencias*/
+$colorLisExpConFo : #f5f5f5;
+$colorLisExpConFu : 555;
+$colorLisExpTiFo : #ed1821;
+$colorLisExpTiFu : white;
+$colorLisExpBotFo : #31708f;
+$colorLisExpBotFu : white;		
+
+/*Fondo slider inicio*/
+$colorSliCon: white;
+
+/*Lista redes*/
+$colorLisRedA:	white;
+
+/* Colores Modal*/
+$colorModTit:	#f5f5f5;
+$colorModFoo:	#fffefe;
+$colorModConFu : black;
+$colorModBotFo : #31708f;
+
+/*Barra principal*/
+$colorBarPri:	black;
+$colorBarPriAct:		#00b3ec;
+$colorBarPriActFocus:	#1dafec;
+$colorBarPriActHover:	#1dafec;
+$colorBarPriInaHover:	#07779a; /*Verde*/
+
+/*Color de separadores*/
+$colorSepara : #a9a1a1;
+
+/*Color flecha incio*/
+$colorBotFleFo : #ff5722;/*#00b3ec;/*black;/*#333333;*/
+
+/*Secciones*/
+$colorSecA:	#ededed;/*#f5f5f5;*/
+$colorSecB: white;	/*#666*/
+
+body, html {
+	color: rgb(90,90,90);
+	font-family:  'Open Sans', sans-serif; /*OpenSans-Light;/* OpenSans-Light; /*MYRIAD-REGULAR; cocon-regular;*/
+	height: 100%;
+	margin: 0px;  /* Distancia externa*/
+	padding: 0px;	/* Distancia interna */   
+	width: 100%;
+}
+
+footer {
+	hgroup h2 {
+		color: $colorFooterh2;
+	}
+	h4{color: $colorFooterh4;}
+	
+	background-color: $colorFooterBkg;
+	height: 100%;
+		
+	.lista-redes{
+		list-style:none; 
+		.boton-contacto {
+			/*text-align: center;*/
+			padding: 10px 0px;
+			a {
+				color: $colorLisRedA;
+				font-size: 1em;
+				opacity:0.9;
+				text-decoration: none;
+				transition: all 0.3s linear;
+				
+				opacity:0.7;
+				transition: all 0.3s linear;
+				&:hover{
+					opacity: 1;
+					span{
+						transition: all 0.3s linear;
+						opacity: 1;
+					}
+				}
+				&:before{
+					opacity: 1;
+					span{
+						transition: all 0.3s linear;
+						opacity: 0.7;
+					}
+				}				
+
+				span{
+					color: $colorLisRedA;
+					font-size: 2.4em;
+					float: left;
+					margin: 0px 12px;
+					opacity:0.7;
+				}
+				p{
+					float: left;
+					opacity:0.6;
+					padding-top: 6px;
+				}
+
+			}
+		}	
+	}	
+	.logo{
+		background-image: url('../img/logo.png');    
+	    background-position: center;    /* Position: left top|left center|left bottom|right top|right center|right bottom|center top|center center|center bottom*/
+	    background-repeat: no-repeat;	/* Se repite o no la imagen*/
+	    /*background-attachment: fixed;*/
+	    /* https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size&preval=auto */
+	    background-size: 200px;			 /*Tamaño de imagen: auto|cover|contain*/
+	    height: 200px;
+	    /*height: 150px;*/
+	    opacity: 0.7;
+	    margin: 7px
+	}
+	.copyright{
+		border-top: 1px solid rgba(255, 255, 255, .3);
+		padding-top: 10px;
+		color: white;
+	}
+
+	
+}
+
+h1,h3 {
+	font-weight: bold;
+}
+
+h2 {
+	color: $colorh2;
+}
+
+h3{
+	color: $colorh3;
+	/*font-weight: lighter;*/
+	margin-bottom: 30px;
+	/*margin-top: 30px;*/
+}
+
+
+
+hgroup{
+	margin-bottom: 10px;
+	padding-top: 30px;
+	text-align: center;
+	h2{
+		border-bottom: 1px solid $colorSepara;
+		display: inline-block;
+		font-size: 4em;
+		font-weight: lighter;
+		padding: 10px 0px;
+		
+	}
+}
+
+nav.navbar-inverse{
+	ul.nav li.active a{
+    	background-color: $colorBarPriAct;
+    	&:focus{
+    		background-color: $colorBarPriActFocus;
+    	}
+    	&:hover{
+    		background-color: $colorBarPriActHover;
+    	}
+	}
+	.navbar-nav {
+		margin: 0px;
+		li a:hover{
+			background-color: $colorBarPriInaHover;
+		}
+	}	
+}
+
+section{
+	height: 100%;
+	display: inline-table;
+	width: 100%;
+}
+
+
+#inicio {
+	height: 100%;
+	color: $colorInicio;
+	text-align: center;
+	text-shadow: black 0.1em 0.1em 0.1em;
+	hgroup{
+		padding-top:15%;
+		position: relative;
+		width: 100%;
+		z-index: 1;
+		h1{		
+			border-bottom: 3px solid $colorIniH1Bor;
+			display: inline-block;
+			font-size: 4em;
+			font-weight: bold;
+			font-family: $inicioFont;
+			/*margin-top: 20%;*/
+			padding-bottom: 10px;
+		}
+		h3{
+			color:$colorInicioh3;
+		}
+	}
+}
+
+#habilidades {
+	background-color: $colorSecB;
+}
+
+#barra-principal {
+	background-color: $colorBarPri;
+	border: 0px;
+	/*margin-top: 50px;
+	position: fixed;*/
+	font-weight: bold;
+	right:5%;
+	width: 140px;				
+	z-index: 5;
+}
+
+#navPrincipal{
+	padding: 0px;
+	li{
+		width: 100%;
+	}
+}
+
+#perfil{
+	.imagen-perfil {
+		border: 9px solid $colorImaBor;
+		border-radius: 50%;
+		height: 200px;
+		margin: 0 auto;
+		width: 200px;
+	}
+	.lista-caracter{
+		h4{
+			padding-left: 40px;
+		}
+		.cuerpo{
+			padding-top: 43px;
+		}
+		ul {
+			font-style: italic;
+			list-style: none;
+		    /*font-weight: bold;*/
+		    span{
+		    	font-size: 1.4em;
+		    	margin-right: 5px;
+		    	background-color: transparent;
+		    	color: $colorPerIte;
+		    }
+		    li{
+		    	/*padding: 3px 0px;*/
+		    	transition:all 0.2s linear;
+				&:hover{
+					font-size: 1.1em;
+					color: black;
+					cursor: crosshair;
+				}
+				&:before {
+					font-size: 1.5em;
+					color: red;
+					cursor: default;
+				}
+				/*&:after {
+					font-size: 0.9em;
+					color: yellow;
+				}*/		    	
+		    }
+		}
+	}
+	.lista-idiomas{
+		/*display: inline-block;
+		display:-webkit-inline-box;*/
+		list-style: none;		
+		.imagen-idioma{
+			height: 30px;
+			width: 50px;
+			margin-top: 6px;
+			/*margin: 0px 10px;*/
+			/*margin-left: 35px;*/
+		}
+	}
+}
+
+#slideimg1{background-image: url("../img/Fondo1.jpg"); opacity: 1;}
+/*#slideimg1{background: no-repeat centerFondo1 fixed url("../img/fondo1.png"); opacity: 1;}*/
+#slideimg2{background-image: url("../img/Fondo2.jpg"); }
+#slideimg3{background-image: url("../img/Fondo3.jpg"); }
+#slideimg4{background-image: url("../img/Fondo4.jpg"); }
+#slideimg5{background-image: url("../img/Fondo5.jpg"); }
+
+.barra-principal-fija{
+	position: fixed;
+	margin-top: 50px;
+}
+
+.barra-idioma {
+	position: fixed;				
+	top:10px;
+	z-index: 10;
+	img{
+		box-shadow: 3px 2px 9px #131111;
+		height: 30px;
+		opacity: 0.6;
+		width: 30px;		
+		-webkit-filter: grayscale(0.7);
+	}
+	.activo{
+		box-shadow: 3px 3px 11px #131111;
+		height: 34px;
+		opacity: 1;
+		width: 34px;
+		-webkit-filter: grayscale(0);		
+	}
+
+	ul{		
+		li{
+			display: inline-block;
+			padding: 1px;
+			a {
+					text-decoration: none;
+					/*color: #666666;*/
+					/*Animación de transición
+					(all indica que todas las transiciones tendrán este efecto)
+					0.3 el tiempo en segundos, linear el efecto*/
+					transition:all 0.3s linear;
+					&:hover{
+						/*color: blue;*/
+						.menu-interno {display: inline;}
+					}
+					&:before {
+						left: 0;
+						
+					}
+					&:after {
+						
+						right: 0;
+					}					
+				}
+		}
+	}
+}
+
+.barra-principal-movil{
+	position: absolute;
+	top: 100%;
+}
+
+.barra-social {	
+	bottom: 0px;
+	position: fixed;
+	right: 0px;
+	width: 100%;
+	z-index: 5;
+	/*padding: 0 30%;*/
+		ul {
+			background-color: $colorBarSocBckg;
+			/*border-radius: 2%;*/
+			/*box-shadow: 2px 2px 3px black;*/
+			font-weight: bold;
+			font-size: 2em;
+			margin: 0px;
+			padding: 2px 25%;
+
+			li{
+				display: inline; /*Muestra elementos en línea horizontal*/
+				list-style: none;
+				padding: 0px 7px; 		/* 0px arriba y abajo, 10 px izq y der*/
+				a {
+					text-decoration: none;
+					color: $colorBarSocA;/*#a94442;*/
+					/*Animación de transición
+					(all indica que todas las transiciones tendrán este efecto)
+					0.3 el tiempo en segundos, linear el efecto*/
+					transition:all 0.3s linear;
+					&:hover{
+						color: $colorBarSocAHov;
+						opacity: 1;
+						.menu-interno {display: inline;}
+					}
+					&:before {
+						left: 0;
+						
+					}
+					&:after {
+						
+						right: 0;
+					}					
+				}
+				
+			}
+		}	
+}
+
+.boton-flecha{
+	background-color: $colorBotFleFo;
+	border-radius: 50%;
+	color: white;
+	font-size: 3em;
+	/*text-align: center;*/
+	height: 70px;
+	padding-left: 15px;
+	padding-top: 10px;
+	width:70px;
+}
+
+.botones-navega {	
+	bottom: 7px;
+	position: fixed;
+	right: 7px;
+	z-index: 10;
+	a {
+		color: $colocBotNav;
+		font-size: 3em;
+	}
+}
+
+.container {
+	padding: 10px 150px 10px 120px;
+	span{
+		font-size: xx-large;
+		margin-right: 5px;
+		color: $colorConSpa;
+
+		border-radius: 50%;
+		background-color: $colorConSpaFo;
+		padding: 8px;
+	}
+}
+
+.fullscreen {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.lista-habilidades{
+	list-style: none;
+	padding: 0px;
+	li div p {
+		/*margin: 2px;*/
+		font-size: 1em;
+		padding-left: 20px;
+		text-align: left;
+	}
+	.progress {
+		margin-bottom: 5px;
+		transition:all 0.2s linear;
+		width: 100%;
+		&:hover{
+			height:20px;
+			width: 102%;
+			/*background-color: gray;*/
+		}
+		&:before {
+			height:20px;
+			width: 100%;		
+		}
+		&:after {
+			height:20px;
+			width: 100%;
+		}			
+	}
+	.progress-bar{
+		background-color: $colorLisHab;
+	}
+}
+
+.lista-habilidades-bd{
+	@extend .lista-habilidades;
+	.progress-bar{
+		background-color: $colorLisHabBd;
+	}
+}
+
+.lista-habilidades-h{
+	@extend .lista-habilidades;
+	.progress-bar{
+		background-color: $colorLisHabh;
+	}
+}
+
+.lista-habilidades-f{
+	@extend .lista-habilidades;
+	.progress-bar{
+		background-color: $colorLisHabf;
+	}
+}
+
+.lista-habilidades-s{
+	@extend .lista-habilidades;
+	.progress-bar{
+		background-color: $colorLisHabs;
+	}
+}
+
+.lista-habilidades-p{
+	@extend .lista-habilidades;
+	.progress-bar{
+		background-color: $colorLisHabp;
+	}
+}
+
+/* Clases que usan herencia*/
+.lista-formacion{	
+	list-style:none; 
+	padding: 5px 5px;
+	.forma{
+		background-color: $colorLisForConFo;
+		color: $colorLisForConFu;
+		border: 1px solid $colorLisForConBor;
+	}
+	.flecha{
+	    border: solid transparent;
+	    border-right-color: $colorLisForFl;
+	    border-width: 10px;
+	    content: '';
+	    height: 0;
+	    left: -20px; 
+	    position: absolute;
+	    top: 25px;
+	    width: 0;
+	}	
+	.tiempo{
+		border-radius: 50%;
+	    background-color: $colorLisForTiFo;
+	    color: $colorLisForTiFu;
+	    font-size: 1.2em;
+	    height: 85px;
+	    margin-left: 0px;
+	    margin-right: 10px;
+	    padding-top: 25px;
+	    width: 85px;
+	}
+}
+
+.lista-experiencia{
+
+	@extend .lista-formacion;
+	.forma{
+		background-color: $colorLisExpConFo;
+		color: $colorLisExpConFu;
+		.btn{
+			background-color: $colorLisExpBotFo;
+			color: $colorLisExpBotFu;
+		}
+	}
+	.duracion{
+		font-size: 0.8em;
+		font-weight: bold;
+	}
+	.tiempo{
+		background-color: $colorLisExpTiFo;
+		font-size: 2.5em;
+		padding-top: 17px;
+		span{
+			background-color: $colorLisExpTiFo;
+	    	color: $colorLisExpTiFu;
+			margin: 0px;
+			padding: 0px;
+		}
+	}
+	.tecno{
+		/*font-weight: bold;*/
+		font-size: 0.9em;
+		strong{
+			font-size: 0.9em;
+		}
+	}
+	.modal-header{
+		background-color: $colorModTit;
+		h3{
+			margin: 0px auto;
+			font-weight: bold;
+		}
+	} 
+	
+	.modal-body{
+		color: $colorModConFu;
+	}
+	.modal-content p{
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+	.modal-footer{
+		background-color: $colorModFoo;
+		.btn{
+			background-color: $colorModBotFo;
+		}	
+	}
+}
+
+.row-fluid{
+	strong{
+		font-size: 1.1em;	
+	}
+	p{
+		font-size: 1.1em;
+	}
+}
+
+.seccion-a{
+	background-color: $colorSecA;
+}
+.seccion-b{
+	background-color: $colorSecB;
+}
+
+.slider_container{
+
+	/*Filtros a imagen*/
+	-webkit-filter: grayscale(0);/*escala de grises*/
+	
+    /* Efecto parallax de movimiento */
+    background-attachment: fixed;	/* Indica si se mueve o no con el scroll: scroll|fixed|local|initial|inherit */
+	background-color: $colorSliCon;
+    background-position: left bottom;    /* Position: left top|left center|left bottom|right top|right center|right bottom|center top|center center|center bottom*/
+    background-repeat: no-repeat;	/* Se repite o no la imagen*/
+    
+    background-size: cover;			/* Tamaño de imagen: auto|cover|contain*/
+
+	/*position: absolute; Aunque se haga scroll permanecerá en la misma posición*/
+
+	left:0; /*Determina la distancia desde la izquierda*/
+	overflow: hidden; /*Determina lo que sucede cuando el texto se desborda*/
+	top: 0; /*Determina la distancia desde arriba*/
+	z-index: 5;
+
+	.slideContainer{
+		-webkit-filter: grayscale(0.7);/*escala de grises*/
+		height: 100%;
+		white-space: nowrap;/*Determina como los espacios en blanco se manejan*/
+		.slide{
+			/*Propiedades para ajustar la imagen background*/
+			background-attachment: fixed;
+			/*background-color: #fff;*/
+			background-position: center bottom;		    
+		    background-repeat: no-repeat;	/* Se repite o no la imagen*/
+			background-size: cover; /*100% 100%;*/
+			display: inline-block;/*Determina el tipo de caja usado en un elemento HTML*/
+			margin-right: -4px; /*Para quitar el espacio entre elemento y elemento*/
+			opacity: 0;
+			left: 0px;
+			position: absolute;
+			top: 0px;
+			vertical-align:  top;
+			/*width: 25%;*/
+			z-index: 0;
+
+		}
+	}
+}
+

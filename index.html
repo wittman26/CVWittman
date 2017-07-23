@@ -1,0 +1,374 @@
+<!-- http://www.pascalvangemert.nl/#/profile -->
+<!-- http://appkarma.io/ -->
+<!-- https://chefly.co/ -->
+<!DOCTYPE html>
+<html ng-app="modTraductor">
+<head>
+	<meta charset="utf-8">
+	<!-- Se adiciona para usar los elementos responsivos de bootstrap -->
+	<meta name="viewport" content="width=device-width, initical-scale=1.0">
+
+	<meta name="author" content="Wittman Gutierrez" />	
+	<meta name="description" content="Wittman Gutierrez, Ingeniero de sistemas, desarrollador de sofware / Conocimiento en front end y back end" />
+	<meta name="keywords" content="Wittman Gutierez, Curriculum, programador Angular, Desarrollador Web, programador java,CV,Diseño web, PHP, JAVA, JQuery, MySQL, POO" />
+	<meta name="robots" content="index, follow" />
+
+	<title>Wittman Gutiérrez - Ingeniero de Sistemas</title>
+
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- ESTILOS PROPIOS -->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">	
+	<link rel="stylesheet" type="text/css" href="css/estilo-responsive.css">
+	
+	<!-- <script href="js/modernizr-custom.js"></script> -->
+
+	<!-- FRAMEWORKS -->
+	<script src="libs/jquery-3.1.1.min.js"></script>
+	<script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+	<script src="libs/angularjs-1.6.4/angular.min.js"></script>
+
+	<!-- LIBRERIAS DE APLICACION -->
+	<script src="libs/plugins-angularjs/angular-translate.min.js"></script>
+	<script src="libs/plugins-angularjs/angular-translate-loader-static-files.min.js"></script>
+	<script src="js/controlador.js"></script>
+	<script src="js/princ.js"></script>
+
+	<!-- LIBRERIAS DE EFECTOS -->
+	<!-- Efecto de scroll -->
+	<script src="js/scrollto.min.js"></script>
+	<script src="js/localscroll.min.js"></script>
+</head>
+<body data-spy="scroll" ng-controller="ctrTraductor" ng-cloak>
+	<header>
+			<!-- BARRA DE IDIOMA -->
+			<div class="barra-idioma" >				
+				<ul class="inline">
+					<li>
+						<a href="" ng-click="cambiaridioma('ES')">
+							<img src="img/ESP.jpg" class="img-circle" alt="Español" title="Español" id="ES"></img>
+						</a>
+					</li>
+					<li>
+						<a href="" ng-click="cambiaridioma('FR')">
+							<img src="img/FRA.jpg" class="img-circle" alt="Français" title="Français" id="FR"></img>
+						</a>
+					</li>
+					<li>
+						<a href="" ng-click="cambiaridioma('EN')">
+							<img src="img/GB.jpg" class="img-circle" alt="English" title="English" id="EN"></img>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- BARRA SOCIAL -->
+			<div class="barra-social visible-xs">
+				<ul>
+					<li>
+						<a href="mailto:wittman26@gmail.com"><i class="fa fa-envelope"></i></a>
+					</li>				
+					<li>
+						<a href="https://www.linkedin.com/in/wittman26/"><i class="fa fa-linkedin-square"></i></a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com/wittmang"><i class="fa fa-facebook-square"></i></a>
+					</li>
+					<li>
+						<a href="https://github.com/wittman26"><i class="fa fa-github"></i></a>
+					</li>
+				</ul>
+				
+			</div>	
+			<!-- BARRA PRINCIPAL -->
+			<nav class="navbar navbar-inverse " id="barra-principal"><!-- navbar-inverse -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navPrincipal">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<!-- <a class="navbar-brand" href="#">Wittman :D</a> -->
+				</div>		
+				<div class="collapse navbar-collapse" id="navPrincipal">
+					<ul class="nav navbar-nav">
+						<li class="active text-center">
+							<a href="#inicio">{{ 'barraprincipal.Inicio' | translate}}</a>
+						</li>
+						<li class="text-center">
+							<a href="#perfil">{{ 'barraprincipal.Perfil' | translate}}</a>
+						</li>	
+						<li class="text-center">
+							<a href="#habilidades">{{ 'barraprincipal.Habilidades' | translate}}</a>
+						</li>
+						<li class="text-center">
+							<a href="#formacion">{{ 'barraprincipal.Formacion' | translate}}</a>
+						</li>
+						<li class="text-center">
+							<a href="#experiencia">{{ 'barraprincipal.Experiencia' | translate}}</a>
+						</li>
+						<li class="text-center">
+							<a href="#contacto">{{ 'barraprincipal.Contacto' | translate}}</a>
+						</li>					
+					</ul>
+				</div>
+			</nav>
+	
+			<!-- BOTONES DE NAVEGACIÓN -->
+			<div class="botones-navega" ng-hide="true">
+				<a href="" class="btn"><span class="glyphicon glyphicon-chevron-up"></span></a>
+				<a href="" class="btn"><span class="glyphicon glyphicon-chevron-down"></span></a>
+			</div>
+	</header>
+
+	<!-- INICIO -->
+    <section class="slider_container fullscreen" id="inicio">
+		<hgroup>
+			<h1>Wittman Gutiérrez</h1>
+			<h3>{{ 'inicio.titulo' | translate }}</h3>
+			<a href="#perfil" class="btn boton-flecha">
+				<span class="glyphicon glyphicon-chevron-down" id="animaflecha"></span>
+			</a>
+		</hgroup>    
+        <div class="slideContainer">            	
+            <div id="slideimg1" class="slide fullscreen"></div>
+            <div id="slideimg2" class="slide fullscreen"></div>
+            <div id="slideimg3" class="slide fullscreen"></div>
+            <div id="slideimg4" class="slide fullscreen"></div>
+            <div id="slideimg5" class="slide fullscreen"></div>
+        </div>
+    </section> 
+
+	<!-- PERFIL -->
+	<section id="perfil" class="seccion-a">
+		<hgroup>
+			<h2>{{ 'barraprincipal.Perfil' | translate}}</h2>
+			<h3>{{ 'inicio.titulo' | translate }}</h3>
+		</hgroup>
+
+		<div class="container">
+			<div class="row-fluid text-center">
+				<div class="col-md-12 px-2 text-center lista-caracter">
+						<div class="col-md-4 ">
+							<img class="media-object imagen-perfil" src="img/Perfil.png" alt="Wittman Gutierrez">
+						</div>
+						<div class="col-md-8 cuerpo text-left">
+							<!-- <h4 class="media-heading">{{ 'perfil.acercade.idiomas.titulo' | translate}}</h4> -->
+							<ul class="lista-caracter">
+								<li ng-repeat="x in [1,2,3,4]">
+									<span class="fa fa-star"></span>
+									{{ 'perfil.acercade.caracter.item'+x | translate}}
+								</li>
+							</ul>
+						</div>				
+				</div>		
+			</div>
+			<div class="row-fluid">			
+				<div class="col-md-12 text-justify px-2">
+					<h3><span class="fa fa-user-circle-o"></span>{{ 'perfil.acercade.titulo' | translate}}</h3>
+					<p>{{ 'perfil.acercade.detalle' | translate}}</p>
+
+					<h3><span class="fa fa-comments-o"></span>{{ 'perfil.acercade.idiomas.titulo' | translate}}</h3>
+					<div class="col-md-12 px-2 text-left lista-idiomas">
+						<div ng-repeat="x in [1,2,3]" class="col-lg-4">
+							<div class="media">
+								<div class="pull-left">
+									<img ng-src="{{idiomas[x]}}" alt="" class="media-object imagen-idioma">
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">
+										{{ 'perfil.acercade.idiomas.leng' + x + '.nombre' | translate}}
+									</h4>
+									<p>
+										{{ 'perfil.acercade.idiomas.leng' + x + '.nivel' | translate}}
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<!-- HABILIDADES -->
+	<section id="habilidades" class="seccion-b">
+		<hgroup>
+			<h2>{{ 'barraprincipal.Habilidades' | translate}}</h2>
+		</hgroup>
+		<div class="container">
+
+			<!-- Lista de Habilidades -->
+			<div class="row-fluid" ng-repeat="z in habilidades">
+				<div class="row-fluid">	
+					<div class="col-md-12 col-xs-11">
+						<h3>
+							<span ng-attr-class="{{ z.icono}}"></span>
+							{{ 'habilidades.' + z.titulo | translate}}
+						</h3>
+					</div>
+				</div>
+
+				<div class="row-fluid">
+					<div>
+						<ul ng-attr-class="{{z.clase}}">
+							<li ng-repeat="x in z.listahab" class="col-md-6 col-xs-11">
+								<!-- <div>
+									<strong><p class="">{{x.nombre}}</p></strong>
+								</div> -->							
+								<div class="progress">
+									<div class="progress-bar"  id="myBar" data-nivel="{{x.nivel}}">
+									 <!-- ng-attr-style="width:{{x.nivel}}" -->
+										<strong><p class="">{{x.nombre}}</p></strong>
+									</div>
+								</div>							
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</section>
+
+	<!-- FORMACION -->
+	<section id="formacion" class="seccion-a">
+		<hgroup>
+			<h2>{{ 'barraprincipal.Formacion' | translate}}</h2>
+		</hgroup>
+		<div class="container"> 
+
+			<!-- Lista de formaciones -->
+			<div class="row-fluid" ng-repeat="z in formaciones">
+				<div class="row-fluid">	
+					<div class="col-md-12 col-xs-11">
+						<h3>
+							<span ng-attr-class="{{ z.icono}}"></span>
+							{{ 'formacion.' + z.titulo + '.titulo' | translate}}
+						</h3>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<ul class="lista-formacion">
+						<li ng-repeat="x in z.cantidad">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 well tiempo text-center">
+								<strong><p class="">{{ 'formacion.' + z.titulo + '.forma' + x +'.anho' | translate}}</p></strong>
+							</div>							
+							<div class="col-lg-10 col-md-10 col-sm-9 col-xs-8 text-left well forma">
+								<strong>{{ 'formacion.' + z.titulo + '.forma' + x +'.titulo' | translate}}</strong>
+								<p>{{ 'formacion.' + z.titulo + '.forma' + x +'.lugar' | translate}}</p>
+								<p ng-hide="{{z.shtiempo}}" >{{ 'formacion.' + z.titulo + '.forma' + x +'.tiempo' | translate}}</p>
+								<div class="flecha"></div>
+							</div>
+						</li>
+					</ul>														
+				</div>
+			</div>										
+		</div>
+	</section>	
+
+	<!-- EXPERIENCIA -->
+	<section id="experiencia" class="seccion-b">
+		<hgroup>
+			<h2>{{ 'barraprincipal.Experiencia' | translate}}</h2>
+		</hgroup>
+		<div class="container">
+			<div class="row-fluid">
+				<ul class="lista-experiencia">
+					<li ng-repeat="x in ExpPri">
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 well tiempo text-center">
+							<!-- <span ng-attr-class="{{ 'experiencia.expe' + x +'.icono' | translate}}"></span> -->
+							<span ng-attr-class="{{ ExpIco[x-1].icono}}"></span>
+						</div>							
+						<div class="col-lg-10 col-md-10 col-sm-9 col-xs-8 text-left well forma">
+							<a ng-href="{{ 'experiencia.expe' + x +'.sitio' | translate}}" target="_blank">
+								<strong>{{ 'experiencia.expe' + x +'.lugar' | translate}}</strong>
+							</a>
+							<p>{{ 'experiencia.expe' + x +'.cargo' | translate}}</p>
+							
+							<p class="duracion">{{ 'experiencia.expe' + x +'.tiempo' | translate}}</p class="duracion">
+							<p class="tecno">
+								<strong>{{ 'comun.tecnologias' | translate}}</strong>
+								{{ 'experiencia.expe' + x +'.tecnologias' | translate}}
+							</p>
+
+							<div class="flecha"></div>
+
+							<!-- Funciones (Modal) -->
+							<div id="{{'modal'+x}}" class="modal fade" role="dialog">
+							  <div class="modal-dialog">
+
+							    <!-- Contenido Modal (Directiva)-->
+							    <div funciones numfun="Expfun" numexp="x"></div>
+
+							  </div>
+							</div>
+
+							<a data-target="#{{'modal'+x}}" data-toggle="modal" class="btn btn-info btn-large">
+							{{ 'comun.leermas' | translate}}</a>
+						</div>							
+					</li>
+				</ul>														
+			</div>					
+		</div>
+	</section>
+
+	<!-- CONTACTO -->
+	<footer id="contacto">
+		<hgroup>
+			<h2>{{ 'barraprincipal.Contacto' | translate}}</h2>
+		</hgroup>	
+		<div class="container">
+			<div class="row-fluid">
+				<ul class="lista-redes">
+					<li class="boton-contacto col-md-6 col-xs-11">
+						<a href="mailto:wittman.gutierrez@gmail.com">
+							<span class="fa fa-envelope"></span>
+							<p>wittman.gutierrez@gmail.com</p>
+						</a>
+					</li>
+					<li class="boton-contacto col-md-6 col-xs-11">
+						<a target="_blank" href="https://linkedin.com/in/wittmangt/">
+							<span class="fa fa-linkedin-square"></span>
+							<p>https://linkedin.com/in/wittmangt/</p>
+						</a>
+					</li>
+					<li class="boton-contacto col-md-6 col-xs-11">
+						<a target="_blank" href="https://www.facebook.com/wittmang">
+							<span class="fa fa-facebook-square"></span>
+							<p>https://www.facebook.com/wittmang</p>
+						</a>
+					</li>
+					<li class="boton-contacto col-md-6 col-xs-11">
+						<a target="_blank" href="https://github.com/wittman26">
+							<span class="fa fa-github"></span>
+							<p>https://github.com/wittman26</p>
+						</a>
+					</li>
+				</ul>				
+			</div>
+			<div class="row-fluid">
+				<div class="col-xs-12 logo">				
+				</div>
+				<div class="col-xs-12 text-center">
+				<iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwittmangutierrez.ml&width=133&layout=button_count&action=like&size=large&show_faces=false&share=true&height=46&appId=1277266832330917" width="200" height="46" style="border:none;overflow:hidden; padding-left: 20px;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div class="col-xs-12">
+					<p class="copyright text-center">© Wittman Gutiérrez, 2017</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

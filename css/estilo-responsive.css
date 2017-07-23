@@ -1,0 +1,193 @@
+/* Escritorio */
+@media(min-width: 1200px) {
+	.container{padding: 10px 150px;}
+}
+
+/* Escritorio peque o tablet*/
+@media(min-width: 768px) and (max-width: 979px){ /*Cuando la pantalla sea de esta medida*/
+	.container{padding: 10px 180px 10px 90px;}
+	/*#barra-principal{width: 100%; margin-top: 0px;right: 0px;}*/
+	.lista-caracter ul{
+		padding-left: 0px;
+	}
+}
+
+/* Tablet o smartphone */
+@media(max-width: 767px) {
+	footer .lista-redes .boton-contacto {
+		padding: 0px 0px;
+	}
+	footer .lista-redes .boton-contacto a span{
+	    margin: 0px 8px;
+	}
+	footer .logo{
+		height: 130px;
+		background-size: 130px;
+	}	
+	h3{
+		/*margin-bottom: 10px;*/
+	}
+	#barra-principal{width: 100%; margin-top: 0px;right: 0px;z-index: 1;}
+	#inicio hgroup {
+		margin-top: 8%;
+	}
+	#inicio hgroup h1{
+		font-size: 3em;
+	}
+	.barra-idioma{
+		height: 50px;
+		top:0px;
+		width: 50%;
+	}
+	
+	.container{ padding: 0px 20px 0px 10px;}
+	.inline{
+		margin-top: 10px;
+	}
+	.lista-experiencia .tiempo{
+		margin-left: 6%;
+	}
+	.lista-formacion .tiempo{
+		/*padding: 10px;*/
+		margin-left: 6%;
+	}
+	#perfil	.lista-caracter ul{
+		padding-left: 5px;
+	}
+	#perfil .lista-caracter .cuerpo{
+		padding-top: 13px;
+	}		
+}
+
+/* Smartphone*/
+@media(max-width: 480px) {
+	footer .lista-redes{
+		padding: 0px;
+	}
+
+	footer .lista-redes .boton-contacto {
+		margin: 0px;
+		padding: 4px 0px;
+	}
+
+	footer .lista-redes .boton-contacto {
+		padding: 0px 0px;
+	}
+
+	footer .lista-redes .boton-contacto a {
+	    font-size: 0.9em;
+	}
+	footer .lista-redes .boton-contacto a span{
+	    margin: 0px 8px;
+	}	
+	footer .logo{
+		height: 150px;
+		background-size: 150px;
+	}
+	h3{
+		margin-bottom: 2px;
+	}
+	#barra-principal{width: 100%; margin-top: 0px;right: 0px;z-index: 1;}
+	#inicio hgroup {
+		margin-top: 3%;
+	}
+	#inicio hgroup h1{
+		font-size: 3em;
+	}
+	.barra-idioma{
+		height: 50px;
+		top:0px;
+		width: 50%;
+	}
+	.imagen-perfil {
+		border: 9px solid;
+		height: 150px;
+		width: 150px;
+	}
+	.inline{
+		margin-top: 10px;
+	}
+	#perfil .lista-caracter ul{
+		padding-left: 5px;
+	}
+	#perfil .lista-caracter .cuerpo{
+		padding-top: 13px;
+	}
+
+}
+
+/* Smartphone*/
+@media(max-width: 400px) {
+	footer .lista-redes .boton-contacto {
+		padding: 0px 0px;
+	}
+
+	footer .lista-redes .boton-contacto a {
+	    font-size: 0.9em;
+	}
+
+	footer .lista-redes .boton-contacto a span{
+	    margin: 0px 8px;
+	}	
+	footer .logo{
+		background-size: 150px;
+		height: 150px;
+	}	
+	h3{
+		font-size: 1.2em;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	hgroup h2{
+		font-size: 2.5em;
+	}
+
+	#inicio hgroup {
+		margin-top: 3%;
+	}
+	#inicio hgroup h1{
+		font-size: 3em;
+	}	
+	.barra-idioma{
+		height: 50px;
+		top:0px;
+		width: 50%;
+	}
+	.barra-idioma ul{
+		padding: 1px;
+	}
+	.barra-social ul {
+		font-size: 1.7em;
+	}
+
+	.forma{
+		font-size: 0.8em;	
+	}
+
+	.container{ padding: 0px 15px 0px 10px; margin : 0px;}
+
+	.lista-habilidades 	li div p {font-size: 0.8em;}
+	.lista-habilidades-bd li div p {font-size: 0.8em;}
+	.lista-habilidades-h li div p {font-size: 0.8em;}
+	.lista-habilidades-f li div p {font-size: 0.8em;}
+	.lista-habilidades-s li div p {font-size: 0.8em;}
+	.lista-habilidades-p li div p {font-size: 0.8em;}
+	
+	.lista-experiencia .tiempo{
+		height: 60px;
+		font-size: 2em;
+		margin-left: 0px;
+		padding-top: 8px;
+		padding-left: 12px;
+		width: 60px;		
+	}
+
+	.lista-formacion .tiempo{
+		font-size: 1em;
+		height: 60px;
+		margin-left: 0px;
+		padding-top: 18px;
+		padding-left: 8px;
+		width: 60px;		
+	}
+}

@@ -37,7 +37,7 @@ $(document).ready(function(){
 	var width = $('.slider_container').width();
 
 	/* INICIO - Cada 5 segs cambia imagen */
-	intervalo = setInterval(cambioImagen, 5000);
+	// intervalo = setInterval(cambioImagen, 5000);
 
 	/* INICIO - Anima el botón flecha */
 	setInterval(function(){
@@ -172,13 +172,13 @@ function cambioImagen(){
 		aux=$('.slide').length;
 	}
 	/* Imagen anterior */
-	$('#slideimg'+aux).animate({
+	$('.slideContainer #slideimg'+aux).animate({
 		'opacity':'0',
 		'background-size': 'cover'
 	},1500);
 	
 	/* Imagen siguiente */
-	$('#slideimg'+pos).animate({
+	$('.slideContainer #slideimg'+pos).animate({
 		'opacity':'1',
 		'background-size': 'cover'
 	},1500);

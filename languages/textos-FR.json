@@ -73,6 +73,16 @@
                 "anho"  :   "2017",
                 "titulo":   "Oracle Java Programmer I (1Z0-803)",
                 "lugar":  "Oracle"
+            },
+            "forma2":{
+                "anho"  :   "2017",
+                "titulo":   "Microsoft Certified Professional (70-480) - HTML5,CSS3 y JavaScript",
+                "lugar":  "Microsoft"
+            },
+            "forma3":{
+                "anho"  :   "2017",
+                "titulo":   "Oracle Database 11g: SQL Fundamentals I (1Z0-051)",
+                "lugar":  "Oracle"
             }
         },
         "complementaria":{

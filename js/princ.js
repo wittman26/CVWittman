@@ -37,7 +37,7 @@ $(document).ready(function(){
 	var width = $('.slider_container').width();
 
 	/* INICIO - Cada 5 segs cambia imagen */
-	// intervalo = setInterval(cambioImagen, 5000);
+	intervalo = setInterval(cambioImagen, 5000);
 
 	/* INICIO - Anima el botón flecha */
 	setInterval(function(){

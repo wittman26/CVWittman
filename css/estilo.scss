@@ -236,7 +236,7 @@ section{
 	text-shadow: black 0.1em 0.1em 0.1em;
 	hgroup{
 		padding-top:15%;
-		position: relative;
+		position: fixed; //relative;
 		width: 100%;
 		z-index: 1;
 		h1{		
